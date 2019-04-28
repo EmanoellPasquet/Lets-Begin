@@ -12,20 +12,20 @@ public class Conjuntos {
 		Set<Integer> C2= new HashSet<>(Arrays.asList(5,6,7,8,9,10));
 		
 			
-		//União
+		
 		Set<Integer>Uniao=new HashSet<>(C1);
 		Uniao.addAll(C2);
-		System.out.println(Uniao);
+		System.out.println("União: "+Uniao);
 		
-		//Interseção
+		
 		Set<Integer>Inter=new HashSet<>(C1);
 		Inter.retainAll(C2);
-		System.out.println(Inter);
+		System.out.println("Interseção: "+Inter);
 	
-		//Diferença
+		
 		Set<Integer>Dif=new HashSet<>(C1);
 		Dif.removeAll(C2);
-		System.out.println(Dif);
+		System.out.println("Diferença: "+Dif);
 	}
 
 }
